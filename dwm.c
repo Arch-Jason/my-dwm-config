@@ -1652,14 +1652,16 @@ run(void)
 void
 runAutostart(void) {
 	/* system("cd ~/.dwm; ./autostart_blocking.sh"); */
-    system ("cd ~/my-dwm-config/; bash autostart.sh &"); //autostart script
-	/* system("trayer --edge bottom --align right --width 5 --height 22 --SetDockType true --transparent true --tint 0x444444 &"); //set trayer */
+    /* system ("cd ~/my-dwm-config/; bash autostart.sh &"); //autostart script */
+    system ("variety &");
+    system ("bash ~/my-dwm-config/setwallpaper.sh &");
 	system("setxkbmap us colemak");
 	system("fcitx");
     system("sogou-qimpanel");
 	system("compton -b");
 	system("xset dpms 120 300");
     system("nm-applet &");
+    system("xrandr --output eDP-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off");
 }
 
 void

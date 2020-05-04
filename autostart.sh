@@ -6,6 +6,6 @@
 #set bar
 while true
 do
-    xsetroot -name "  $(date)  "
+    xsetroot -name "  [$(date '+%a %Y-%m-%d %H:%M %S')] [$(cat ~/my-dwm-config/wttr)]"
     sleep 2
 done

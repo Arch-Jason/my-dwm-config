@@ -1652,6 +1652,7 @@ run(void)
 void
 runAutostart(void) {
 	/* system("cd ~/.dwm; ./autostart_blocking.sh"); */
+    system ("bash ~/my-dwm-config/getweather.sh &");
     system ("cd ~/my-dwm-config/; bash autostart.sh &"); //autostart script
     system ("variety &");
     system ("bash ~/my-dwm-config/setwallpaper.sh &");

@@ -1652,8 +1652,8 @@ run(void)
 void
 runAutostart(void) {
 	/* system("cd ~/.dwm; ./autostart_blocking.sh"); */
-    system ("bash ~/my-dwm-config/getweather.sh &");
-    system ("cd ~/my-dwm-config/; bash autostart.sh &"); //autostart script
+    /* system ("bash ~/my-dwm-config/getweather.sh &"); */
+    /* system ("cd ~/my-dwm-config/; bash autostart.sh &"); //autostart script */
     system ("variety &");
     system ("bash ~/my-dwm-config/setwallpaper.sh &");
 	system ("setxkbmap us colemak");
@@ -1662,7 +1662,9 @@ runAutostart(void) {
 	system ("compton -b");
 	system ("xset dpms 300 300");
     system ("nm-applet &");
+	system ("pasystray &");
     system ("xrandr --output eDP-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off");
+    system ("dwmbar &");
 }
 
 void

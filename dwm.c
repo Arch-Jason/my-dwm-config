@@ -1658,12 +1658,11 @@ runAutostart(void) {
     system ("bash ~/my-dwm-config/setwallpaper.sh &");
 	system ("setxkbmap us colemak");
 	system ("ibus-daemon");
-    system ("sogou-qimpanel");
 	system ("compton -b");
 	system ("xset dpms 300 300");
     system ("nm-applet &");
-	system ("pasystray &");
-    system("xrandr --output eDP --off --output HDMI-A-0 --primary --mode 1920x1080 --pos 973x2002 --rotate normal --output DisplayPort-0 --off --output DisplayPort-1 --off");
+	/* system ("pasystray &"); */
+    system("kmix &");
     system ("dwmbar &");
     system("albert &");
 }
